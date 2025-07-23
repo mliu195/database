@@ -1,10 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
-import { Navbar, Container, Nav, Button, Form, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Navbar, Container, Nav, Button} from 'react-bootstrap';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 import {
@@ -325,7 +323,6 @@ function App() {
     
     return (
         <Container className="App" style={{ backgroundImage: "url(/images/stardewBackground.jpg)" }}>
-            <Router>
                 <Navbar style={{ backgroundColor: 'rgba(104, 168, 233, 1)' }} expand="lg">
                     <Container>
                         <Navbar.Brand href="/">{lang=== 'en' ? en.title : fr.title}</Navbar.Brand>
@@ -407,8 +404,7 @@ function App() {
                         <LabelList dataKey="name" />
                     </ScatterChart>
                         </ResponsiveContainer>
-                
-            </Router>
+          
             
         </Container>
     );
